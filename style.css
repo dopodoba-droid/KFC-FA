@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background:
+    radial-gradient(circle at top, #330000, #050505 60%);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* HERO */
+
+.hero {
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.95)
+    );
+
+    border-bottom:3px solid red;
+
+}
+
+
+.hero h1 {
+
+    font-size:100px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px red,
+    0 0 30px red,
+    0 0 60px red;
+
+}
+
+
+.hero h2 {
+
+    color:red;
+
+    letter-spacing:5px;
+
+}
+
+
+
+.btn {
+
+    background:#e00000;
+
+    padding:15px 45px;
+
+    border-radius:10px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 40px red;
+
+}
+
+
+
+
+
+/* TITLES */
+
+h2 {
+
+    color:white;
+
+    text-align:center;
+
+    font-size:40px;
+
+    text-shadow:
+    0 0 15px red;
+
+}
+
+
+
+
+/* CARDS */
+
+.cards {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.card {
+
+    width:300px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #1a0000,
+    #050505
+    );
+
+
+    border:2px solid red;
+
+    border-radius:20px;
+
+    padding:25px;
+
+
+    box-shadow:
+
+    0 0 15px red,
+    inset 0 0 20px rgba(255,0,0,.3);
+
+
+}
+
+
+
+
+
+/* ===== FC26 FORMATION ===== */
+
+
+.fc-pitch {
+
+
+    width:650px;
+
+    max-width:95%;
+
+    margin:auto;
+
+    padding:40px;
+
+
+    background:
+
+    linear-gradient(
+    180deg,
+    rgba(255,0,0,.15),
+    rgba(0,0,0,.95)
+    );
+
+
+    border:
+
+    3px solid red;
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 0 20px red,
+    0 0 60px rgba(255,0,0,.5),
+    inset 0 0 40px rgba(255,0,0,.25);
+
+
+}
+
+
+
+
+.line {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:45px 0;
+
+
+}
+
+
+
+
+
+/* LAM RAM */
+
+.two {
+
+    justify-content:space-around;
+
+}
+
+
+
+/* LM RM */
+
+.wide {
+
+    justify-content:space-between;
+
+}
+
+
+
+
+
+/* DEFENCE */
+
+
+.four {
+
+    justify-content:space-between;
+
+}
+
+
+
+
+
+/* PLAYER BALLS */
+
+
+.player {
+
+
+    width:70px;
+
+    height:70px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    #ff0000,
+    #500000 60%,
+    #080000
+    );
+
+
+    border:
+
+    3px solid white;
+
+
+    border-radius:50%;
+
+
+    font-size:13px;
+
+    font-weight:bold;
+
+
+    box-shadow:
+
+    0 0 15px red,
+    0 0 35px red;
+
+
+    text-shadow:
+
+    0 0 10px black;
+
+
+}
+
+
+
+
+.player:hover {
+
+
+    transform:scale(1.15);
+
+    box-shadow:
+
+    0 0 30px white,
+    0 0 60px red;
+
+
+}
+
+
+
+
+/* SECTIONS */
+
+
+section {
+
+    padding:70px 20px;
+
+}
+
+
+
+
+footer {
+
+    background:#000;
+
+    padding:30px;
+
+    border-top:2px solid red;
+
+    text-shadow:0 0 10px red;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+
+.player{
+
+width:55px;
+
+height:55px;
+
+font-size:11px;
+
+}
+
+}
