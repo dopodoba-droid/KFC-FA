@@ -400,6 +400,36 @@ font-size:11px;
 
     box-shadow:
     0 0 40px red;
+    
+    .club-badge {
+
+    width:180px;
+    height:180px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+    filter:
+    drop-shadow(0 0 15px red)
+    drop-shadow(0 0 35px red);
+
+    animation: badgeGlow 2s infinite alternate;
+
+}
+
+
+@keyframes badgeGlow {
+
+from {
+    transform:scale(1);
+}
+
+to {
+    transform:scale(1.05);
+}
+
+}
 
 }
 }
