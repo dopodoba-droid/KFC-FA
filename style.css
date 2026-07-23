@@ -3,6 +3,53 @@
 }
 
 body {
+nav {
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 40px;
+
+background:#050505;
+
+border-bottom:2px solid red;
+
+box-shadow:0 0 20px red;
+
+z-index:1000;
+
+}
+
+
+nav a {
+
+color:white;
+
+text-decoration:none;
+
+margin:15px;
+
+font-weight:bold;
+
+}
+
+
+nav a:hover {
+
+color:red;
+
+}
+    
     margin: 0;
     background:
     radial-gradient(circle at top, #330000, #050505 60%);
