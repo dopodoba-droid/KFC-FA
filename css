@@ -4,18 +4,17 @@
 
 body {
     margin: 0;
-    background: #050505;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    background:
+    radial-gradient(circle at top, #330000, #050505 60%);
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero {
-
-    min-height: 90vh;
+    height:100vh;
 
     display:flex;
     flex-direction:column;
@@ -24,65 +23,48 @@ body {
 
     background:
     linear-gradient(
-    rgba(0,0,0,.8),
+    rgba(0,0,0,.7),
     rgba(0,0,0,.95)
-    ),
-    url("https://images.unsplash.com/photo-1579952363873-27d3bfad9b0c");
+    );
 
-    background-size:cover;
-    background-position:center;
+    border-bottom:3px solid red;
 
 }
 
 
 .hero h1 {
 
-    font-size:90px;
+    font-size:100px;
 
-    margin:0;
-
-    color:#ff0000;
+    color:white;
 
     text-shadow:
-    0 0 15px red,
-    0 0 40px red;
+    0 0 10px red,
+    0 0 30px red,
+    0 0 60px red;
 
 }
 
 
 .hero h2 {
 
-    font-size:32px;
+    color:red;
+
+    letter-spacing:5px;
 
 }
 
-
-.hero p {
-
-    font-size:20px;
-
-}
-
-
-
-
-
-/* ================= BUTTON ================= */
 
 
 .btn {
 
-    display:inline-block;
+    background:#e00000;
 
-    padding:15px 40px;
+    padding:15px 45px;
 
-    margin:20px;
-
-    background:#ff0000;
+    border-radius:10px;
 
     color:white;
-
-    border-radius:30px;
 
     text-decoration:none;
 
@@ -90,17 +72,7 @@ body {
 
     box-shadow:
     0 0 15px red,
-    0 0 35px red;
-
-    transition:.3s;
-
-}
-
-
-
-.btn:hover {
-
-    transform:scale(1.1);
+    0 0 40px red;
 
 }
 
@@ -108,20 +80,13 @@ body {
 
 
 
-/* ================= SECTIONS ================= */
-
-
-section {
-
-    padding:60px 20px;
-
-}
-
-
+/* TITLES */
 
 h2 {
 
-    color:red;
+    color:white;
+
+    text-align:center;
 
     font-size:40px;
 
@@ -133,9 +98,7 @@ h2 {
 
 
 
-
-/* ================= CARDS ================= */
-
+/* CARDS */
 
 .cards {
 
@@ -150,10 +113,18 @@ h2 {
 }
 
 
-
 .card {
 
-    background:#111;
+    width:300px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #1a0000,
+    #050505
+    );
+
 
     border:2px solid red;
 
@@ -161,23 +132,12 @@ h2 {
 
     padding:25px;
 
-    width:280px;
 
     box-shadow:
-    0 0 20px rgba(255,0,0,.5);
 
-    transition:.3s;
+    0 0 15px red,
+    inset 0 0 20px rgba(255,0,0,.3);
 
-}
-
-
-
-.card:hover {
-
-    transform:translateY(-10px);
-
-    box-shadow:
-    0 0 40px red;
 
 }
 
@@ -185,71 +145,61 @@ h2 {
 
 
 
-/* ================= FC26 FORMATION ================= */
+/* ===== FC26 FORMATION ===== */
 
 
 .fc-pitch {
 
-    width:600px;
+
+    width:650px;
 
     max-width:95%;
 
     margin:auto;
 
-    padding:45px 35px;
+    padding:40px;
 
 
     background:
 
     linear-gradient(
-    rgba(255,0,0,.08),
-    rgba(0,0,0,.9)
-    ),
+    180deg,
+    rgba(255,0,0,.15),
+    rgba(0,0,0,.95)
+    );
 
-    #080808;
+
+    border:
+
+    3px solid red;
 
 
-    border:3px solid red;
-
-    border-radius:25px;
+    border-radius:30px;
 
 
     box-shadow:
 
     0 0 20px red,
-
+    0 0 60px rgba(255,0,0,.5),
     inset 0 0 40px rgba(255,0,0,.25);
 
-}
 
+}
 
 
 
 
 .line {
 
+
     display:flex;
 
     justify-content:center;
 
     align-items:center;
 
-    width:100%;
-
     margin:45px 0;
 
-}
-
-
-
-
-
-/* LAM + RAM */
-
-
-.line.two {
-
-    justify-content:space-evenly;
 
 }
 
@@ -257,25 +207,19 @@ h2 {
 
 
 
-/* LM + RM */
+/* LAM RAM */
 
+.two {
 
-.line.wide {
-
-    justify-content:space-between;
-
-    padding:0 30px;
+    justify-content:space-around;
 
 }
 
 
 
+/* LM RM */
 
-
-/* BACK FOUR */
-
-
-.line.four {
+.wide {
 
     justify-content:space-between;
 
@@ -285,45 +229,70 @@ h2 {
 
 
 
-/* PLAYER CIRCLES */
+/* DEFENCE */
+
+
+.four {
+
+    justify-content:space-between;
+
+}
+
+
+
+
+
+/* PLAYER BALLS */
 
 
 .player {
 
-    width:60px;
 
-    height:60px;
+    width:70px;
+
+    height:70px;
+
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
 
+    justify-content:center;
 
-    background:#050505;
+
+    background:
+
+    radial-gradient(
+    circle,
+    #ff0000,
+    #500000 60%,
+    #080000
+    );
 
 
-    border:3px solid red;
+    border:
+
+    3px solid white;
+
 
     border-radius:50%;
 
 
-    color:white;
+    font-size:13px;
 
     font-weight:bold;
-
-    font-size:13px;
 
 
     box-shadow:
 
     0 0 15px red,
+    0 0 35px red;
 
-    inset 0 0 10px red;
 
+    text-shadow:
 
-    transition:.3s;
+    0 0 10px black;
+
 
 }
 
@@ -332,150 +301,64 @@ h2 {
 
 .player:hover {
 
+
     transform:scale(1.15);
 
     box-shadow:
 
-    0 0 25px red,
+    0 0 30px white,
+    0 0 60px red;
 
-    0 0 50px red;
 
 }
 
 
 
 
+/* SECTIONS */
 
-/* ================= PLAYER CARDS ================= */
 
+section {
 
-.player-card {
-
-    background:#111;
-
-    border:2px solid red;
-
-    border-radius:20px;
-
-    padding:25px;
-
-    box-shadow:0 0 20px red;
+    padding:70px 20px;
 
 }
 
 
-
-
-
-/* ================= GALLERY ================= */
-
-
-.gallery {
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:20px;
-
-}
-
-
-
-.gallery div {
-
-    width:250px;
-
-    height:150px;
-
-
-    background:#111;
-
-    border:2px solid red;
-
-    border-radius:20px;
-
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-
-    box-shadow:0 0 20px red;
-
-}
-
-
-
-
-
-/* ================= FOOTER ================= */
 
 
 footer {
 
-    padding:30px;
-
     background:#000;
 
+    padding:30px;
+
     border-top:2px solid red;
+
+    text-shadow:0 0 10px red;
 
 }
 
 
-
-
-
-/* ================= MOBILE ================= */
 
 
 @media(max-width:700px){
 
+.hero h1{
 
-.hero h1 {
-
-    font-size:55px;
-
-}
-
-
-.hero h2 {
-
-    font-size:22px;
+font-size:60px;
 
 }
 
 
-h2 {
+.player{
 
-    font-size:30px;
+width:55px;
 
-}
+height:55px;
 
-
-
-.player {
-
-    width:50px;
-
-    height:50px;
-
-    font-size:11px;
+font-size:11px;
 
 }
-
-
-
-.line.wide {
-
-    padding:0 10px;
-
-}
-
-
 
 }
