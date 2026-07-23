@@ -412,12 +412,31 @@ font-size:11px;
 
 }
 
+.club-title {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+.club-title h1 {
+
+    margin:0;
+
+}
+
 
 .club-badge {
 
-    width:70px;
+    width:80px !important;
 
-    height:70px;
+    height:80px !important;
 
     object-fit:contain;
 
@@ -428,9 +447,6 @@ font-size:11px;
 }
 
 
-.club-title h1 {
-
-    margin:0;
 
 }
 
