@@ -400,34 +400,37 @@ font-size:11px;
 
     box-shadow:
     0 0 40px red;
-    
-    .club-badge {
+.club-title {
 
-    width:180px;
-    height:180px;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+.club-badge {
+
+    width:70px;
+
+    height:70px;
 
     object-fit:contain;
 
-    margin-bottom:20px;
-
     filter:
-    drop-shadow(0 0 15px red)
-    drop-shadow(0 0 35px red);
-
-    animation: badgeGlow 2s infinite alternate;
+    drop-shadow(0 0 10px red)
+    drop-shadow(0 0 25px red);
 
 }
 
 
-@keyframes badgeGlow {
+.club-title h1 {
 
-from {
-    transform:scale(1);
-}
-
-to {
-    transform:scale(1.05);
-}
+    margin:0;
 
 }
 
