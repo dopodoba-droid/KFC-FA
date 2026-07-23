@@ -3,6 +3,42 @@
 }
 
 body {
+.menu {
+
+display:none;
+
+background:red;
+
+color:white;
+
+border:none;
+
+padding:10px;
+
+font-size:20px;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.menu{
+
+display:block;
+
+}
+
+
+.nav-links{
+
+display:none;
+
+}
+
+
+}
 section {
 
 background:
