@@ -808,6 +808,50 @@ height:50px;
 
 font-size:12px;
 
+.trial-badge {
+
+margin-top:20px;
+
+padding:10px 25px;
+
+background:#050505;
+
+border:2px solid red;
+
+border-radius:30px;
+
+color:red;
+
+font-weight:bold;
+
+font-size:20px;
+
+letter-spacing:2px;
+
+box-shadow:
+
+0 0 15px red,
+0 0 40px red;
+
+animation:pulseTrial 1.5s infinite;
+
+}
+
+
+@keyframes pulseTrial {
+
+50% {
+
+transform:scale(1.08);
+
+box-shadow:
+
+0 0 30px red,
+0 0 70px red;
+
+}
+
+}
 }
 
 
